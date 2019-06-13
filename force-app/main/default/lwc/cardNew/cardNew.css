@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  transition: opacity 0.5s ease 0s;
+  opacity: 1;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover,
+.card.selected {
+  opacity: 0.6;
+}
+
+.card img {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  width: 100%;
+}
+
+.card .checked {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0.7rem;
+}
+
+.card-body h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}

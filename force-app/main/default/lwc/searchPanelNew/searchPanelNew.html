@@ -1,0 +1,81 @@
+<template>
+    <lightning-card title="Filters">
+        <h3 class="slds-m-left_small">Opportunity</h3>
+        <lightning-layout>
+            <lightning-layout-item padding="horizontal-small">
+                <c-custom-input-new field-api-name="Amount" operation="greaterOrEquals" type="number"
+                    label="Min. Amount" oncustomchange={filterOpportunities}></c-custom-input-new>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <c-custom-input-new field-api-name="Amount" operation="lessOrEquals" type="number" label="Max. Amount"
+                oncustomchange={filterOpportunities}></c-custom-input-new>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <c-custom-input-new field-api-name="CloseDate" operation="greaterOrEquals" type="date"
+                    label="Min. Close Date" oncustomchange={filterOpportunities}></c-custom-input-new>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <c-custom-input-new field-api-name="CloseDate" operation="lessOrEquals" type="date"
+                    label="Max. Close Date" oncustomchange={filterOpportunities}></c-custom-input-new>
+            </lightning-layout-item>
+        </lightning-layout>
+        <h3 class="slds-m-left_small">Owners</h3>
+        <lightning-layout>
+            <lightning-layout-item padding="horizontal-small">
+                <lightning-input value={ownerName} type="text" label="Name" onchange={handleChangeOwnerName}>
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <lightning-input value={ownerTitle} type="text" label="Title" onchange={handleChangeOwnerTitle}>
+                </lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout multiple-rows="true">
+            <template if:true={users}>
+                <template for:each={users} for:item="user">
+                    <lightning-layout-item padding="around-small" size="4" key={user.Id}>
+                        <c-card-new img-src={user.SmallPhotoUrl} title={user.Name} record-id={user.Id}
+                            oncardselected={handleSelectedOwner}></c-card-new>
+                    </lightning-layout-item>
+                </template>
+            </template>
+            <template if:true={errorUsers}>
+                <c-error-panel errors={errorUsers}></c-error-panel>
+            </template>
+        </lightning-layout>
+        <h3 class="slds-m-left_small">Produts</h3>
+        <lightning-layout>
+            <lightning-layout-item padding="horizontal-small">
+                <lightning-input value={productName} type="text" label="Name" onchange={handleChangeProductName}>
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <lightning-input value={productCode} type="text" label="Code" onchange={handleChangeProductCode}>
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <template if:true={productFamilies.data}>
+                    <select onchange={handleChangeProductFamily}>
+                        <option value=""></option>
+                        <template for:each={productFamilies.data.values} for:item="family">
+                            <option key={family.value} value={family.value}>{family.label}</option>
+                        </template>
+                    </select>
+                </template>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout multiple-rows="true">
+            <template if:true={products}>
+                <template for:each={products} for:item="product">
+                    <lightning-layout-item padding="around-small" size="4" key={product.Id}>
+                        <c-card-new img-src={product.Picture__c} title={product.ProductCode} record-id={product.Id}
+                            oncardselected={handleSelectedProduct}></c-card-new>
+                    </lightning-layout-item>
+                </template>
+            </template>
+            <template if:true={errorProducts}>
+                <c-error-panel errors={errorProducts}></c-error-panel>
+            </template>
+        </lightning-layout>
+    </lightning-card>
+</template>

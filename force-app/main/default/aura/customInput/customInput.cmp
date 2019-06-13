@@ -1,0 +1,10 @@
+<aura:component>
+    <aura:attribute name="fieldApiName" type="String" />
+    <aura:attribute name="type" type="String" default="text" />
+    <aura:attribute name="operation" type="String" />
+    <aura:attribute name="label" type="String" />
+
+    <aura:registerEvent name="customInputChanged" type="c:customInputChangeEvent"/>
+
+    <lightning:input aura:id="custom-input" type="{!v.type}" label="{!v.label}" onchange="{!c.handleChange}" />
+</aura:component>

@@ -1,0 +1,74 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="SearchPanelController">
+    <aura:attribute name="users" type="User[]" />
+    <aura:attribute name="products" type="Product2[]" />
+    <aura:attribute name="productFamilies" type="SearchPanelController.PicklistOption[]" />
+
+    <aura:attribute name="selectedProductFamily" type="String" />
+    <aura:attribute name="productName" type="String" />
+    <aura:attribute name="productCode" type="String" />
+    <aura:attribute name="ownerName" type="String" />
+    <aura:attribute name="ownerTitle" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:registerEvent name="filterOpportunitiesEvent" type="c:filterOpportunitiesEvent"/>
+    <aura:registerEvent name="filterOpportunitiesRelatedEvent" type="c:filterOpportunitiesRelatedEvent"/>
+
+    <lightning:card title="Filters">
+        <h3 class="slds-m-left_small">Opportunity</h3>
+        <lightning:layout>
+            <lightning:layoutItem padding="horizontal-small">
+                <c:customInput fieldApiName="Amount" operation="greaterOrEquals" type="number" label="Min. Amount" customInputChanged="{!c.filterOpportunities}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <c:customInput fieldApiName="Amount" operation="lessOrEquals" type="number" label="Max. Amount" customInputChanged="{!c.filterOpportunities}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <c:customInput fieldApiName="CloseDate" operation="greaterOrEquals" type="date" label="Min. Close Date" customInputChanged="{!c.filterOpportunities}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <c:customInput fieldApiName="CloseDate" operation="lessOrEquals" type="date" label="Max. Close Date" customInputChanged="{!c.filterOpportunities}" />
+            </lightning:layoutItem>
+        </lightning:layout>
+        <h3 class="slds-m-left_small">Owners</h3>
+        <lightning:layout>
+            <lightning:layoutItem padding="horizontal-small">
+                <lightning:input value="{!v.ownerName}" type="text" label="Name" onchange="{!c.filterUsers}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <lightning:input value="{!v.ownerTitle}" type="text" label="Title" onchange="{!c.filterUsers}" />
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.users}" var="user">
+                <lightning:layoutItem padding="around-small" size="4">
+                    <c:card imgSrc="{!user.SmallPhotoUrl}" title="{!user.Name}" recordId="{!user.Id}" selectedEvent="{!c.handleSelectedOwner}" />
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+        <h3 class="slds-m-left_small">Produts</h3>
+        <lightning:layout>
+            <lightning:layoutItem padding="horizontal-small">
+                <lightning:input value="{!v.productName}" aura:id="productNameInput" type="text" label="Name" onchange="{!c.filterProducts}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <lightning:input value="{!v.productCode}" type="text" label="Code" onchange="{!c.filterProducts}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <lightning:select value="{!v.selectedProductFamily}" label="Family" onchange="{!c.filterProducts}">
+                    <option value=""></option>
+                    <aura:iteration items="{!v.productFamilies}" var="productFamily">
+                        <option value="{!productFamily.value}">{!productFamily.label}</option>
+                    </aura:iteration>
+                </lightning:select>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.products}" var="product">
+                <lightning:layoutItem padding="around-small" size="4">
+                    <c:card imgSrc="{!product.Picture__c}" title="{!product.ProductCode}" recordId="{!product.Id}" selectedEvent="{!c.handleSelectedProduct}" />
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>

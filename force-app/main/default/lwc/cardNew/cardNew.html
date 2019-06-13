@@ -1,0 +1,11 @@
+<template>
+    <div class={className} onclick={handleClick}>
+        <template if:true={selected}>
+            <lightning-icon icon-name="action:approval" alternative-text="Checked" class="checked" size="xx-small"></lightning-icon>
+        </template>
+        <img src={imgSrc} />
+        <div class="card-body">
+            <h5>{title}</h5>
+        </div>
+    </div>
+</template>

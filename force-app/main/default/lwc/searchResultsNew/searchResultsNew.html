@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Opportunities">
+        <lightning-datatable key-field="id" data={opportunities} columns={columns} hide-checkbox-column="true">
+        </lightning-datatable>
+        <template if:true={errorOpps}>
+            <c-error-panel errors={errorOpps}></c-error-panel>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,18 @@
+<aura:component>
+    <aura:attribute name="selected" type="Boolean" default="false" />
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="imgSrc" type="String" />
+    <aura:attribute name="title" type="String" />
+
+    <aura:registerEvent name="selectedEvent" type="c:cardSelectedEvent"/>
+
+    <div class="{!'card' + (v.selected ? ' selected' : '')}" onclick="{!c.handleClick}">
+        <aura:if isTrue="{!v.selected}">
+            <lightning:icon iconName="action:approval" alternativeText="Checked" class="checked" size="xx-small" />
+        </aura:if>
+        <img src="{!v.imgSrc}" />
+        <div class="card-body">
+            <h5>{!v.title}</h5>
+        </div>
+    </div>
+</aura:component>

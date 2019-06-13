@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Event raised when the card component is selected">
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="selected" type="Boolean" />
+</aura:event>

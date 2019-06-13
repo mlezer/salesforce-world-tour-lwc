@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION"
+    description="Event raise by Lightning components when the opportunities results component needs to be refreshed">
+    <aura:attribute name="opportunityFilter" type="SearchResultsController.OpportunityFilterWrapper" />
+</aura:event>
