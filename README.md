@@ -1,4 +1,4 @@
-#Salesforce World Tour Paris - Migrate your Lightning Components to Lightning Web Components
+# Salesforce World Tour Paris - Migrate your Lightning Components to Lightning Web Components
 
 ## Installation instructions
 
@@ -46,4 +46,4 @@ sfdx force:user:permset:assign -n Opportunity_Search
 sfdx force:org:open
 ```
 
-1.  In App Launcher, select the **Sales** app.
+9.  In App Launcher, select the **Sales** app.
