@@ -6,7 +6,7 @@
 .sfdx/
 
 #VSCode
-.vscode
+.vscode/
 
 # Logs
 logs
