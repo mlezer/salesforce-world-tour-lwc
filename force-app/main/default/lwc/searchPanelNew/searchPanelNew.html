@@ -8,7 +8,7 @@
             </lightning-layout-item>
             <lightning-layout-item padding="horizontal-small">
                 <c-custom-input-new field-api-name="Amount" operation="lessOrEquals" type="number" label="Max. Amount"
-                oncustomchange={filterOpportunities}></c-custom-input-new>
+                    oncustomchange={filterOpportunities}></c-custom-input-new>
             </lightning-layout-item>
             <lightning-layout-item padding="horizontal-small">
                 <c-custom-input-new field-api-name="CloseDate" operation="greaterOrEquals" type="date"
@@ -19,7 +19,7 @@
                     label="Max. Close Date" oncustomchange={filterOpportunities}></c-custom-input-new>
             </lightning-layout-item>
         </lightning-layout>
-        <h3 class="slds-m-left_small">Owners</h3>
+        <h3 class="slds-m-left_small slds-m-top_x-small">Owners</h3>
         <lightning-layout>
             <lightning-layout-item padding="horizontal-small">
                 <lightning-input value={ownerName} type="text" label="Name" onchange={handleChangeOwnerName}>
@@ -43,7 +43,7 @@
                 <c-error-panel errors={errorUsers}></c-error-panel>
             </template>
         </lightning-layout>
-        <h3 class="slds-m-left_small">Produts</h3>
+        <h3 class="slds-m-left_small slds-m-top_x-small">Produts</h3>
         <lightning-layout>
             <lightning-layout-item padding="horizontal-small">
                 <lightning-input value={productName} type="text" label="Name" onchange={handleChangeProductName}>
@@ -55,12 +55,19 @@
             </lightning-layout-item>
             <lightning-layout-item padding="horizontal-small">
                 <template if:true={productFamilies.data}>
-                    <select onchange={handleChangeProductFamily}>
-                        <option value=""></option>
-                        <template for:each={productFamilies.data.values} for:item="family">
-                            <option key={family.value} value={family.value}>{family.label}</option>
-                        </template>
-                    </select>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="select-product-family">Family</label>
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select onchange={handleChangeProductFamily} class="slds-select" id="select-product-family">
+                                    <option value=""></option>
+                                    <template for:each={productFamilies.data.values} for:item="family">
+                                        <option key={family.value} value={family.value}>{family.label}</option>
+                                    </template>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </template>
             </lightning-layout-item>
         </lightning-layout>
