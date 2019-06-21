@@ -34,16 +34,30 @@ sfdx force:org:create -s -f config/project-scratch-def.json -a salesforce-world-
 sfdx force:source:push
 ```
 
-6. Assign the **Opportunity Search** permission set to the default user:
+6. Query the standard pricebook Id:
+   
+```
+sfdx force:data:soql:query -q "SELECT Id FROM Pricebook2 WHERE IsStandard = true
+```
+
+7. Copy the result. Replace all the "01s5E000000d4xEQAQ" occurrences in the export-demo-PricebookEntrys.json by the previously copied Id.
+
+8. Import the data:
+
+```
+sfdx force:data:tree:import --targetusername salesforce-world-tour-lwc --plan sfdx-out/export-demo-Opportunity-OpportunityLineItem-plan.json
+```
+
+9.  Assign the **Opportunity Search** permission set to the default user:
 
 ```
 sfdx force:user:permset:assign -n Opportunity_Search
 ```
 
-8. Open the scratch org:
+10. Open the scratch org:
 
 ```
 sfdx force:org:open
 ```
 
-9.  In App Launcher, select the **Sales** app.
+11.  In App Launcher, select the **Sales** app.
