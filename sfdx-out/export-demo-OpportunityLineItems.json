@@ -1,0 +1,213 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef1"
+            },
+            "Quantity": 2,
+            "UnitPrice": 100000,
+            "OpportunityId": "@OpportunityRef1",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef2"
+            },
+            "Quantity": 1,
+            "UnitPrice": 25000,
+            "OpportunityId": "@OpportunityRef1",
+            "Product2Id": "@Product2Ref2",
+            "PricebookEntryId": "@PricebookEntryRef2"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef3"
+            },
+            "Quantity": 1,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef2",
+            "Product2Id": "@Product2Ref2",
+            "PricebookEntryId": "@PricebookEntryRef2"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef4"
+            },
+            "Quantity": 1,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef4",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef5"
+            },
+            "Quantity": 1,
+            "UnitPrice": 100000,
+            "OpportunityId": "@OpportunityRef4",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef6"
+            },
+            "Quantity": 2,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef8",
+            "Product2Id": "@Product2Ref2",
+            "PricebookEntryId": "@PricebookEntryRef2"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef7"
+            },
+            "Quantity": 2,
+            "UnitPrice": 100000,
+            "OpportunityId": "@OpportunityRef8",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef8"
+            },
+            "Quantity": 3,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef9",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef9"
+            },
+            "Quantity": 3,
+            "UnitPrice": 100000,
+            "OpportunityId": "@OpportunityRef9",
+            "Product2Id": "@Product2Ref2",
+            "PricebookEntryId": "@PricebookEntryRef2"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef10"
+            },
+            "Quantity": 3,
+            "UnitPrice": 25000,
+            "OpportunityId": "@OpportunityRef9",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef11"
+            },
+            "Quantity": 2,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef11",
+            "Product2Id": "@Product2Ref2",
+            "PricebookEntryId": "@PricebookEntryRef2"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef12"
+            },
+            "Quantity": 2,
+            "UnitPrice": 100000,
+            "OpportunityId": "@OpportunityRef11",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef13"
+            },
+            "Quantity": 2,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef12",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef14"
+            },
+            "Quantity": 1,
+            "UnitPrice": 100000,
+            "OpportunityId": "@OpportunityRef20",
+            "Product2Id": "@Product2Ref2",
+            "PricebookEntryId": "@PricebookEntryRef2"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef15"
+            },
+            "Quantity": 1,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef24",
+            "Product2Id": "@Product2Ref2",
+            "PricebookEntryId": "@PricebookEntryRef2"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef16"
+            },
+            "Quantity": 2,
+            "UnitPrice": 100000,
+            "OpportunityId": "@OpportunityRef24",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef17"
+            },
+            "Quantity": 1,
+            "UnitPrice": 100000,
+            "OpportunityId": "@OpportunityRef28",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef18"
+            },
+            "Quantity": 1,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef28",
+            "Product2Id": "@Product2Ref2",
+            "PricebookEntryId": "@PricebookEntryRef2"
+        },
+        {
+            "attributes": {
+                "type": "OpportunityLineItem",
+                "referenceId": "OpportunityLineItemRef19"
+            },
+            "Quantity": 1,
+            "UnitPrice": 5000,
+            "OpportunityId": "@OpportunityRef29",
+            "Product2Id": "@Product2Ref1",
+            "PricebookEntryId": "@PricebookEntryRef1"
+        }
+    ]
+}

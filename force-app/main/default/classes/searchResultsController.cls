@@ -46,6 +46,8 @@ public with sharing class searchResultsController {
 
         if(filters.size() > 0 || filtersRelated.size() > 0){
             query += ' WHERE ';
+        }else{
+            return JSON.serialize(wrappers);
         }
 
         for(OpportunityFilterWrapper filter : filters){
@@ -92,7 +94,7 @@ public with sharing class searchResultsController {
             wrapper.opportunityName = opp.Name;
             wrapper.accountName = opp.Account.Name;
             wrapper.closeDate = opp.CloseDate;
-            wrapper.confidence = opp.Probability != null ? String.valueOf(opp.Probability / 100) : null;
+            wrapper.confidence = opp.Probability != null ? opp.Probability + '%' : null;
             wrapper.amount = opp.Amount;
             wrappers.add(wrapper);
         }

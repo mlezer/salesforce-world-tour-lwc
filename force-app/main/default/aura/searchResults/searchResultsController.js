@@ -20,7 +20,11 @@
 
     var indexFilter = opportunityFilters.findIndex(filter => filter.fieldApiName == opportunityFilter.fieldApiName && filter.operation == opportunityFilter.operation);
     if(indexFilter !== -1){
-      opportunityFilters[indexFilter] = opportunityFilter;
+      if(opportunityFilter.value == ''){
+        opportunityFilters.splice(indexFilter, 1);
+      }else{
+        opportunityFilters[indexFilter] = opportunityFilter;
+      }
     }else{
       opportunityFilters.push(opportunityFilter);
     }

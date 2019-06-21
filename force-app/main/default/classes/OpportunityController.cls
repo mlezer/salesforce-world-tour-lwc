@@ -43,6 +43,8 @@ public with sharing class OpportunityController {
 
         if(opportunityFilters.size() > 0 || opportunityRelatedFilters.size() > 0){
             query += ' WHERE ';
+        }else{
+            return JSON.serialize(wrappers);
         }
 
         for(OpportunityFilterWrapper filter : opportunityFilters){
@@ -67,6 +69,7 @@ public with sharing class OpportunityController {
             query = query.removeEnd(' WHERE ');
         }
 
+        System.debug(query);
         Map<Id, Opportunity> opportunitiesById = new Map<Id, Opportunity>((List<Opportunity>)Database.query(query));
 
         if(filtersRelatedBySObjectName.containsKey('Product2')){
@@ -89,7 +92,7 @@ public with sharing class OpportunityController {
             wrapper.opportunityName = opp.Name;
             wrapper.accountName = opp.Account.Name;
             wrapper.closeDate = opp.CloseDate;
-            wrapper.confidence = opp.Probability != null ? String.valueOf(opp.Probability / 100) : null;
+            wrapper.confidence = opp.Probability != null ? opp.Probability + '%' : null;
             wrapper.amount = opp.Amount;
             wrappers.add(wrapper);
         }

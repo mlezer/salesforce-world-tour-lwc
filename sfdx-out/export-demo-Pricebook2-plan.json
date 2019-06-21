@@ -1,0 +1,10 @@
+[
+    {
+        "sobject": "Pricebook2",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-demo-Pricebook2s.json"
+        ]
+    }
+]

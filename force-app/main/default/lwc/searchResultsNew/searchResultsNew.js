@@ -62,8 +62,12 @@ export default class SearchResultsNew extends LightningElement {
         filter.fieldApiName == opportunityFilter.fieldApiName &&
         filter.operation == opportunityFilter.operation
     );
-    if (indexFilter !== -1) {
-      this.opportunityFilters[indexFilter] = opportunityFilter;
+    if(indexFilter !== -1){
+      if(opportunityFilter.value == ''){
+        this.opportunityFilters.splice(indexFilter, 1);
+      }else{
+        this.opportunityFilters[indexFilter] = opportunityFilter;
+      }
     } else {
       this.opportunityFilters.push(opportunityFilter);
     }

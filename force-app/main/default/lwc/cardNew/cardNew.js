@@ -10,7 +10,7 @@ export default class CardNew extends LightningElement {
       return "card" + (this.selected ? " selected" : "");
     }
   
-    handleClick(event) {
+    handleClick() {
       this.selected = !this.selected;
   
       this.dispatchEvent(

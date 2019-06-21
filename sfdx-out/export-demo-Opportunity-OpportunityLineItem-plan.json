@@ -1,0 +1,50 @@
+[
+    {
+        "sobject": "Account",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-demo-Accounts.json"
+        ]
+    },
+    {
+        "sobject": "Product2",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-demo-Product2s.json"
+        ]
+    },
+    {
+        "sobject": "Pricebook2",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-demo-Pricebook2s.json"
+        ]
+    },
+    {
+        "sobject": "PricebookEntry",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-PricebookEntrys.json"
+        ]
+    },
+    {
+        "sobject": "Opportunity",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-Opportunitys.json"
+        ]
+    },
+    {
+        "sobject": "OpportunityLineItem",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-OpportunityLineItems.json"
+        ]
+    }
+]

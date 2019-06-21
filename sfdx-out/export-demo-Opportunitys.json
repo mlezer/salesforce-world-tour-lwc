@@ -1,0 +1,398 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef1"
+            },
+            "Name": "Dickenson Mobile Generators",
+            "AccountId": "@AccountRef1",
+            "CloseDate": "2019-03-26",
+            "StageName": "Qualification",
+            "Type": "New Customer",
+            "LeadSource": "Purchased List",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef2"
+            },
+            "Name": "United Oil Office Portable Generators",
+            "AccountId": "@AccountRef2",
+            "CloseDate": "2019-03-14",
+            "StageName": "Negotiation/Review",
+            "Type": "Existing Customer - Upgrade",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef3"
+            },
+            "Name": "Express Logistics Standby Generator",
+            "AccountId": "@AccountRef3",
+            "CloseDate": "2019-02-07",
+            "StageName": "Closed Won",
+            "Type": "New Customer",
+            "LeadSource": "Trade Show",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef4"
+            },
+            "Name": "Express Logistics Standby Generator",
+            "AccountId": "@AccountRef4",
+            "CloseDate": "2019-03-17",
+            "StageName": "Closed Won",
+            "Type": "New Customer",
+            "LeadSource": "Partner",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef5"
+            },
+            "Name": "Grand Hotels Kitchen Generator",
+            "AccountId": "@AccountRef5",
+            "CloseDate": "2019-02-02",
+            "StageName": "Id. Decision Makers",
+            "Type": "Existing Customer - Upgrade",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef6"
+            },
+            "Name": "United Oil Refinery Generators",
+            "AccountId": "@AccountRef6",
+            "CloseDate": "2019-04-28",
+            "StageName": "Proposal/Price Quote",
+            "Type": "Existing Customer - Upgrade",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef7"
+            },
+            "Name": "United Oil SLA",
+            "AccountId": "@AccountRef7",
+            "CloseDate": "2019-05-05",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "Partner",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef8"
+            },
+            "Name": "Grand Hotels Guest Portable Generators",
+            "AccountId": "@AccountRef8",
+            "CloseDate": "2019-05-13",
+            "StageName": "Value Proposition",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "Employee Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef9"
+            },
+            "Name": "Edge Emergency Generator",
+            "AccountId": "@AccountRef9",
+            "CloseDate": "2019-05-13",
+            "StageName": "Closed Won",
+            "Type": "New Customer",
+            "LeadSource": "Word of mouth",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef10"
+            },
+            "Name": "University of AZ Portable Generators",
+            "AccountId": "@AccountRef10",
+            "CloseDate": "2019-02-11",
+            "StageName": "Closed Won",
+            "Type": "New Customer",
+            "LeadSource": "Public Relations",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef11"
+            },
+            "Name": "Pyramid Emergency Generators",
+            "AccountId": "@AccountRef11",
+            "CloseDate": "2019-03-22",
+            "StageName": "Prospecting",
+            "LeadSource": "Phone Inquiry",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef12"
+            },
+            "Name": "Express Logistics Portable Truck Generators",
+            "AccountId": "@AccountRef12",
+            "CloseDate": "2019-02-05",
+            "StageName": "Value Proposition",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "External Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef13"
+            },
+            "Name": "GenePoint Lab Generators",
+            "AccountId": "@AccountRef1",
+            "CloseDate": "2019-05-07",
+            "StageName": "Id. Decision Makers",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef14"
+            },
+            "Name": "GenePoint SLA",
+            "AccountId": "@AccountRef2",
+            "CloseDate": "2019-05-10",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "Partner",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef15"
+            },
+            "Name": "United Oil Installations",
+            "AccountId": "@AccountRef3",
+            "CloseDate": "2019-03-10",
+            "StageName": "Negotiation/Review",
+            "Type": "Existing Customer - Upgrade",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef16"
+            },
+            "Name": "Edge Installation",
+            "AccountId": "@AccountRef4",
+            "CloseDate": "2019-03-04",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "Word of mouth",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef17"
+            },
+            "Name": "Edge SLA",
+            "AccountId": "@AccountRef5",
+            "CloseDate": "2019-01-28",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "Word of mouth",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef18"
+            },
+            "Name": "United Oil Installations",
+            "AccountId": "@AccountRef6",
+            "CloseDate": "2019-03-09",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "Partner",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef19"
+            },
+            "Name": "Grand Hotels Generator Installations",
+            "AccountId": "@AccountRef7",
+            "CloseDate": "2019-04-26",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "External Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef20"
+            },
+            "Name": "United Oil Refinery Generators",
+            "AccountId": "@AccountRef8",
+            "CloseDate": "2019-04-21",
+            "StageName": "Closed Won",
+            "Type": "New Customer",
+            "LeadSource": "Partner",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef21"
+            },
+            "Name": "University of AZ Installations",
+            "AccountId": "@AccountRef9",
+            "CloseDate": "2019-02-08",
+            "StageName": "Proposal/Price Quote",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "Employee Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef22"
+            },
+            "Name": "Express Logistics SLA",
+            "AccountId": "@AccountRef10",
+            "CloseDate": "2019-02-06",
+            "StageName": "Perception Analysis",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "External Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef23"
+            },
+            "Name": "University of AZ SLA",
+            "AccountId": "@AccountRef11",
+            "CloseDate": "2019-02-15",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "Public Relations",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef24"
+            },
+            "Name": "Burlington Textiles Weaving Plant Generator",
+            "AccountId": "@AccountRef12",
+            "CloseDate": "2019-03-19",
+            "StageName": "Closed Won",
+            "Type": "New Customer",
+            "LeadSource": "Web",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef25"
+            },
+            "Name": "United Oil Installations",
+            "AccountId": "@AccountRef1",
+            "CloseDate": "2019-03-21",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "External Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef26"
+            },
+            "Name": "United Oil Emergency Generators",
+            "AccountId": "@AccountRef2",
+            "CloseDate": "2019-03-03",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "External Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef27"
+            },
+            "Name": "Grand Hotels SLA",
+            "AccountId": "@AccountRef3",
+            "CloseDate": "2019-02-04",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "External Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef28"
+            },
+            "Name": "United Oil Standby Generators",
+            "AccountId": "@AccountRef3",
+            "CloseDate": "2019-05-06",
+            "StageName": "Closed Won",
+            "Type": "Existing Customer - Upgrade",
+            "LeadSource": "External Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef29"
+            },
+            "Name": "Grand Hotels Emergency Generators",
+            "AccountId": "@AccountRef4",
+            "CloseDate": "2019-04-24",
+            "StageName": "Closed Won",
+            "Type": "New Customer",
+            "LeadSource": "External Referral",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef30"
+            },
+            "Name": "United Oil Plant Standby Generators",
+            "AccountId": "@AccountRef5",
+            "CloseDate": "2019-04-07",
+            "StageName": "Needs Analysis",
+            "Type": "Existing Customer - Upgrade",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef31"
+            },
+            "Name": "Edge Emergency Generator",
+            "AccountId": "@AccountRef6",
+            "CloseDate": "2019-05-19",
+            "StageName": "Id. Decision Makers",
+            "Type": "Existing Customer - Replacement",
+            "Pricebook2Id": "@Pricebook2Ref1"
+        }
+    ]
+}
