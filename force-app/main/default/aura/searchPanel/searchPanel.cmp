@@ -67,6 +67,7 @@
             <aura:iteration items="{!v.products}" var="product">
                 <lightning:layoutItem padding="around-small" size="4">
                     <c:card imgSrc="{!product.Picture__c}" title="{!product.ProductCode}" recordId="{!product.Id}" selectedEvent="{!c.handleSelectedProduct}" />
+                    <!--<c:cardNew imgSrc="{!product.Picture__c}" title="{!product.ProductCode}" recordId="{!product.Id}" oncardselected="{!c.handleSelectedProduct}" />-->
                 </lightning:layoutItem>
             </aura:iteration>
         </lightning:layout>
