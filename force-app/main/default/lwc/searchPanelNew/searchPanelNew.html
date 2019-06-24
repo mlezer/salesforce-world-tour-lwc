@@ -34,7 +34,7 @@
             <template if:true={users.data}>
                 <template for:each={users.data} for:item="user">
                     <lightning-layout-item padding="around-small" size="4" key={user.Id}>
-                        <c-card-new img-src={user.SmallPhotoUrl} title={user.Name} record-id={user.Id}
+                        <c-card-new img-src={user.FullPhotoUrl} title={user.Name} record-id={user.Id}
                             oncardselected={handleSelectedOwner}></c-card-new>
                     </lightning-layout-item>
                 </template>

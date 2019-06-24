@@ -42,7 +42,7 @@
         <lightning:layout multipleRows="true">
             <aura:iteration items="{!v.users}" var="user">
                 <lightning:layoutItem padding="around-small" size="4">
-                    <c:card imgSrc="{!user.SmallPhotoUrl}" title="{!user.Name}" recordId="{!user.Id}" selectedEvent="{!c.handleSelectedOwner}" />
+                    <c:card imgSrc="{!user.FullPhotoUrl}" title="{!user.Name}" recordId="{!user.Id}" selectedEvent="{!c.handleSelectedOwner}" />
                 </lightning:layoutItem>
             </aura:iteration>
         </lightning:layout>
