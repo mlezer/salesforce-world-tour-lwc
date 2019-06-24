@@ -5,7 +5,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef1"
             },
-            "Name": "Dickenson Mobile Generators",
+            "Name": "Instruments & Co - Instruments",
             "AccountId": "@AccountRef1",
             "CloseDate": "2019-03-26",
             "StageName": "Qualification",
@@ -18,7 +18,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef2"
             },
-            "Name": "United Oil Office Portable Generators",
+            "Name": "Wind instruments & Associates - Instruments",
             "AccountId": "@AccountRef2",
             "CloseDate": "2019-03-14",
             "StageName": "Negotiation/Review",
@@ -30,7 +30,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef3"
             },
-            "Name": "Express Logistics Standby Generator",
+            "Name": "Saxophones Store - Instruments",
             "AccountId": "@AccountRef3",
             "CloseDate": "2019-02-07",
             "StageName": "Closed Won",
@@ -43,7 +43,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef4"
             },
-            "Name": "Express Logistics Standby Generator",
+            "Name": "Instruments at your service - Instruments",
             "AccountId": "@AccountRef4",
             "CloseDate": "2019-03-17",
             "StageName": "Closed Won",
@@ -56,7 +56,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef5"
             },
-            "Name": "Grand Hotels Kitchen Generator",
+            "Name": "Blow and play - Instruments",
             "AccountId": "@AccountRef5",
             "CloseDate": "2019-02-02",
             "StageName": "Id. Decision Makers",
@@ -68,7 +68,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef6"
             },
-            "Name": "United Oil Refinery Generators",
+            "Name": "Play music Inc. - Instruments",
             "AccountId": "@AccountRef6",
             "CloseDate": "2019-04-28",
             "StageName": "Proposal/Price Quote",
@@ -80,7 +80,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef7"
             },
-            "Name": "United Oil SLA",
+            "Name": "Music for everyone - Instruments",
             "AccountId": "@AccountRef7",
             "CloseDate": "2019-05-05",
             "StageName": "Closed Won",
@@ -93,7 +93,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef8"
             },
-            "Name": "Grand Hotels Guest Portable Generators",
+            "Name": "Play the trumpet - Instruments",
             "AccountId": "@AccountRef8",
             "CloseDate": "2019-05-13",
             "StageName": "Value Proposition",
@@ -106,7 +106,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef9"
             },
-            "Name": "Edge Emergency Generator",
+            "Name": "Music for kids - Instruments",
             "AccountId": "@AccountRef9",
             "CloseDate": "2019-05-13",
             "StageName": "Closed Won",
@@ -119,7 +119,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef10"
             },
-            "Name": "University of AZ Portable Generators",
+            "Name": "The instrument reference Store - Instruments",
             "AccountId": "@AccountRef10",
             "CloseDate": "2019-02-11",
             "StageName": "Closed Won",
@@ -132,7 +132,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef11"
             },
-            "Name": "Pyramid Emergency Generators",
+            "Name": "Music shop - Instruments",
             "AccountId": "@AccountRef11",
             "CloseDate": "2019-03-22",
             "StageName": "Prospecting",
@@ -144,7 +144,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef12"
             },
-            "Name": "Express Logistics Portable Truck Generators",
+            "Name": "Learn music - Instruments",
             "AccountId": "@AccountRef12",
             "CloseDate": "2019-02-05",
             "StageName": "Value Proposition",
@@ -168,7 +168,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef14"
             },
-            "Name": "GenePoint SLA",
+            "Name": "Instruments & Co - Instruments (2)",
             "AccountId": "@AccountRef2",
             "CloseDate": "2019-05-10",
             "StageName": "Closed Won",
@@ -181,7 +181,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef15"
             },
-            "Name": "United Oil Installations",
+            "Name": "Wind instruments & Associates - Instruments (2)",
             "AccountId": "@AccountRef3",
             "CloseDate": "2019-03-10",
             "StageName": "Negotiation/Review",
@@ -193,7 +193,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef16"
             },
-            "Name": "Edge Installation",
+            "Name": "Instruments at your service - Instruments (2)",
             "AccountId": "@AccountRef4",
             "CloseDate": "2019-03-04",
             "StageName": "Closed Won",
@@ -206,7 +206,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef17"
             },
-            "Name": "Edge SLA",
+            "Name": "Blow and play - Instruments (2)",
             "AccountId": "@AccountRef5",
             "CloseDate": "2019-01-28",
             "StageName": "Closed Won",
@@ -219,7 +219,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef18"
             },
-            "Name": "United Oil Installations",
+            "Name": "Play music Inc. - Instruments (2)",
             "AccountId": "@AccountRef6",
             "CloseDate": "2019-03-09",
             "StageName": "Closed Won",
@@ -232,7 +232,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef19"
             },
-            "Name": "Grand Hotels Generator Installations",
+            "Name": "Music for everyone - Instruments (2)",
             "AccountId": "@AccountRef7",
             "CloseDate": "2019-04-26",
             "StageName": "Closed Won",
@@ -245,7 +245,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef20"
             },
-            "Name": "United Oil Refinery Generators",
+            "Name": "Play the trumpet - Instruments (2)",
             "AccountId": "@AccountRef8",
             "CloseDate": "2019-04-21",
             "StageName": "Closed Won",
@@ -258,7 +258,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef21"
             },
-            "Name": "University of AZ Installations",
+            "Name": "Music for kids - Instruments (2)",
             "AccountId": "@AccountRef9",
             "CloseDate": "2019-02-08",
             "StageName": "Proposal/Price Quote",
@@ -271,7 +271,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef22"
             },
-            "Name": "Express Logistics SLA",
+            "Name": "The instrument reference Store - Instruments (2)",
             "AccountId": "@AccountRef10",
             "CloseDate": "2019-02-06",
             "StageName": "Perception Analysis",
@@ -284,7 +284,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef23"
             },
-            "Name": "University of AZ SLA",
+            "Name": "Music shop - Instruments (2)",
             "AccountId": "@AccountRef11",
             "CloseDate": "2019-02-15",
             "StageName": "Closed Won",
@@ -297,7 +297,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef24"
             },
-            "Name": "Burlington Textiles Weaving Plant Generator",
+            "Name": "Learn music - Instruments (2)",
             "AccountId": "@AccountRef12",
             "CloseDate": "2019-03-19",
             "StageName": "Closed Won",
@@ -323,7 +323,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef26"
             },
-            "Name": "United Oil Emergency Generators",
+            "Name": "Instruments & Co",
             "AccountId": "@AccountRef2",
             "CloseDate": "2019-03-03",
             "StageName": "Closed Won",
@@ -336,7 +336,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef27"
             },
-            "Name": "Grand Hotels SLA",
+            "Name": "Wind instruments & Associates",
             "AccountId": "@AccountRef3",
             "CloseDate": "2019-02-04",
             "StageName": "Closed Won",
@@ -349,7 +349,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef28"
             },
-            "Name": "United Oil Standby Generators",
+            "Name": "Saxophones Store",
             "AccountId": "@AccountRef3",
             "CloseDate": "2019-05-06",
             "StageName": "Closed Won",
@@ -362,7 +362,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef29"
             },
-            "Name": "Grand Hotels Emergency Generators",
+            "Name": "Instruments at your service",
             "AccountId": "@AccountRef4",
             "CloseDate": "2019-04-24",
             "StageName": "Closed Won",
@@ -375,7 +375,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef30"
             },
-            "Name": "United Oil Plant Standby Generators",
+            "Name": "Blow and play",
             "AccountId": "@AccountRef5",
             "CloseDate": "2019-04-07",
             "StageName": "Needs Analysis",
@@ -387,7 +387,7 @@
                 "type": "Opportunity",
                 "referenceId": "OpportunityRef31"
             },
-            "Name": "Edge Emergency Generator",
+            "Name": "Play music Inc.",
             "AccountId": "@AccountRef6",
             "CloseDate": "2019-05-19",
             "StageName": "Id. Decision Makers",

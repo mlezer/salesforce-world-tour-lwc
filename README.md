@@ -40,12 +40,12 @@ sfdx force:source:push
 sfdx force:data:soql:query -q "SELECT Id FROM Pricebook2 WHERE IsStandard = true
 ```
 
-7. Copy the result. Replace all the `01s5E000000d4xEQAQ` occurrences in the `export-demo-PricebookEntrys.json` file by the previously copied Id.
+7. Copy the result. Replace all the `01s0E000001WBCNQA4` occurrences in the `export-demo-PricebookEntrys.json` file by the previously copied Id.
 
 8. Import the data:
 
 ```
-sfdx force:data:tree:import --targetusername salesforce-world-tour-lwc --plan sfdx-out/export-demo-Opportunity-OpportunityLineItem-plan.json
+sfdx force:data:tree:import --targetusername salesforce-world-tour-lwc --plan sfdx-out/export-demo-Opportunity-OpportunityLineItem-plan.json"
 ```
 
 9.  Assign the **Opportunity Search** permission set to the default user:

@@ -31,16 +31,16 @@
             </lightning-layout-item>
         </lightning-layout>
         <lightning-layout multiple-rows="true">
-            <template if:true={users}>
-                <template for:each={users} for:item="user">
+            <template if:true={users.data}>
+                <template for:each={users.data} for:item="user">
                     <lightning-layout-item padding="around-small" size="4" key={user.Id}>
                         <c-card-new img-src={user.SmallPhotoUrl} title={user.Name} record-id={user.Id}
                             oncardselected={handleSelectedOwner}></c-card-new>
                     </lightning-layout-item>
                 </template>
             </template>
-            <template if:true={errorUsers}>
-                <c-error-panel errors={errorUsers}></c-error-panel>
+            <template if:true={users.error}>
+                <c-error-panel errors={users.error}></c-error-panel>
             </template>
         </lightning-layout>
         <h3 class="slds-m-left_small slds-m-top_x-small">Produts</h3>
@@ -72,16 +72,16 @@
             </lightning-layout-item>
         </lightning-layout>
         <lightning-layout multiple-rows="true">
-            <template if:true={products}>
-                <template for:each={products} for:item="product">
+            <template if:true={products.data}>
+                <template for:each={products.data} for:item="product">
                     <lightning-layout-item padding="around-small" size="4" key={product.Id}>
                         <c-card-new img-src={product.Picture__c} title={product.ProductCode} record-id={product.Id}
                             oncardselected={handleSelectedProduct}></c-card-new>
                     </lightning-layout-item>
                 </template>
             </template>
-            <template if:true={errorProducts}>
-                <c-error-panel errors={errorProducts}></c-error-panel>
+            <template if:true={products.error}>
+                <c-error-panel errors={products.error}></c-error-panel>
             </template>
         </lightning-layout>
     </lightning-card>

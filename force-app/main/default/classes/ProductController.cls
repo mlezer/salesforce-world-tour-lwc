@@ -1,6 +1,6 @@
 public with sharing class ProductController {
     @AuraEnabled(cacheable=true)
-    public static Product2[] getByNameCodeFamily(String name, String code, String family){
+    public static List<Product2> getByNameCodeFamily(String name, String code, String family){
         Product2[] products = new List<Product2>();
         String whereClause = ' WHERE IsActive = true';
         String[] criteria = new List<String>();

@@ -9,15 +9,11 @@ import getProductsByNameCodeFamily from "@salesforce/apex/ProductController.getB
 import getUsersByNameAndTitle from "@salesforce/apex/UserController.getByNameAndTitle";
 
 export default class SearchPanelNew extends LightningElement {
-  productName;
-  productFamily;
-  productCode;
-  ownerName;
-  ownerTitle;
-  @track errorUsers;
-  @track errorProducts;
-  @track products;
-  @track users;
+  @track productName = '';
+  @track productFamily = '';
+  @track productCode = '';
+  @track ownerName = '';
+  @track ownerTitle = '';
 
   @wire(CurrentPageReference) pageRef;
 
@@ -30,56 +26,26 @@ export default class SearchPanelNew extends LightningElement {
   })
   productFamilies;
 
+  @wire(getProductsByNameCodeFamily, {name: '$productName', code: '$productCode', family: '$productFamily'})
+  products;
+
+  @wire(getUsersByNameAndTitle, {name: '$ownerName', title: '$ownerTitle'})
+  users;
+
   handleChangeProductFamily(event) {
     this.productFamily = event.target.value;
-    this.filterProducts();
   }
   handleChangeProductName(event) {
     this.productName = event.target.value;
-    this.filterProducts();
   }
   handleChangeProductCode(event) {
     this.productCode = event.target.value;
-    this.filterProducts();
   }
   handleChangeOwnerName(event) {
     this.ownerName = event.target.value;
-    this.filterUsers();
   }
   handleChangeOwnerTitle(event) {
     this.ownerTitle = event.target.value;
-    this.filterUsers();
-  }
-
-  filterProducts() {
-    getProductsByNameCodeFamily({
-      name: this.productName,
-      code: this.productCode,
-      family: this.productFamily
-    })
-      .then(result => {
-        this.products = result;
-        this.errorProducts = undefined;
-      })
-      .catch(error => {
-        this.errorProducts = error;
-        this.products = undefined;
-      });
-  }
-
-  filterUsers() {
-    getUsersByNameAndTitle({
-      name: this.ownerName,
-      title: this.ownerTitle
-    })
-      .then(result => {
-        this.users = result;
-        this.errorUsers = undefined;
-      })
-      .catch(error => {
-        this.errorUsers = error;
-        this.users = undefined;
-      });
   }
 
   handleSelectedProduct(event) {

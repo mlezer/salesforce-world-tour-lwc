@@ -7,28 +7,13 @@
         <label>None</label>
     </standardValue>
     <standardValue>
-        <fullName>Diesel</fullName>
+        <fullName>Instruments</fullName>
         <default>false</default>
-        <label>Diesel</label>
+        <label>Instruments</label>
     </standardValue>
     <standardValue>
-        <fullName>Gasoline</fullName>
+        <fullName>Accessories</fullName>
         <default>false</default>
-        <label>Gasoline</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Propane</fullName>
-        <default>false</default>
-        <label>Propane</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Installation</fullName>
-        <default>false</default>
-        <label>Installation</label>
-    </standardValue>
-    <standardValue>
-        <fullName>SLA</fullName>
-        <default>false</default>
-        <label>SLA</label>
+        <label>Accessories</label>
     </standardValue>
 </StandardValueSet>
