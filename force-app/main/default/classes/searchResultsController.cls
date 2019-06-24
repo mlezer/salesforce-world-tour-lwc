@@ -15,6 +15,10 @@ public with sharing class searchResultsController {
         public String confidence {get; set;}
         @AuraEnabled
         public Decimal amount {get; set;}
+        @AuraEnabled
+        public String stage {get; set;}
+        @AuraEnabled
+        public String type {get; set;}
     }
 
     public class OpportunityFilterWrapper{
@@ -42,7 +46,7 @@ public with sharing class searchResultsController {
         List<OpportunityRelatedFilterWrapper> filtersRelated = (List<OpportunityRelatedFilterWrapper>)JSON.deserialize(opportunityRelatedFilters, List<OpportunityRelatedFilterWrapper>.class);
 
         List<OpportunityWrapper> wrappers = new List<OpportunityWrapper>();
-        String query = 'SELECT Name, Account.Name, Probability, CloseDate, Amount FROM Opportunity';
+        String query = 'SELECT Name, Account.Name, Probability, CloseDate, Amount, StageName, Type FROM Opportunity';
 
         if(filters.size() > 0 || filtersRelated.size() > 0){
             query += ' WHERE ';
@@ -96,6 +100,8 @@ public with sharing class searchResultsController {
             wrapper.closeDate = opp.CloseDate;
             wrapper.confidence = opp.Probability != null ? opp.Probability + '%' : null;
             wrapper.amount = opp.Amount;
+            wrapper.stage = opp.StageName;
+            wrapper.type = opp.Type;
             wrappers.add(wrapper);
         }
         return JSON.serialize(wrappers);

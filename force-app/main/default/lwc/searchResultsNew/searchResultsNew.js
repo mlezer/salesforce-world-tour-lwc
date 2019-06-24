@@ -27,6 +27,8 @@ export default class SearchResultsNew extends LightningElement {
       { label: "Opportunity name", fieldName: "opportunityName", type: "text" },
       { label: "Account name", fieldName: "accountName", type: "text" },
       { label: "Close date", fieldName: "closeDate", type: "date-local" },
+      { label: "Type", fieldName: "type", type: "text" },
+      { label: "Stage", fieldName: "stage", type: "text" },
       { label: "Confidence", fieldName: "confidence", type: "percentage" },
       {
         label: "Amount",

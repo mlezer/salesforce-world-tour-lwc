@@ -36,7 +36,7 @@ public with sharing class SearchPanelController {
         if (criteria.size() > 0) {
             whereClause += ' AND ' + String.join( criteria, ' AND ' );
 
-            users = Database.query('SELECT Alias, Name, SmallPhotoUrl FROM User' + whereClause);
+            users = Database.query('SELECT Alias, Name, FullPhotoUrl FROM User' + whereClause);
         }
         return users;
     }
