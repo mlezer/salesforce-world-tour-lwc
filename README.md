@@ -37,7 +37,7 @@ sfdx force:source:push
 6. Query the standard pricebook Id:
    
 ```
-sfdx force:data:soql:query -q "SELECT Id FROM Pricebook2 WHERE IsStandard = true
+sfdx force:data:soql:query -q "SELECT Id FROM Pricebook2 WHERE IsStandard = true"
 ```
 
 7. Copy the result. Replace all the `01s0E000001WBCNQA4` occurrences in the `export-demo-PricebookEntrys.json` file by the previously copied Id.
